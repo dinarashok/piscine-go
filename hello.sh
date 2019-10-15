@@ -1,2 +1,2 @@
-echo "Hello Dinara!"
+echo "Hello dinarashok!"
 
