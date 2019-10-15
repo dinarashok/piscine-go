@@ -1,1 +1,1 @@
-ls -name 'a*' & -name '*z' & -name 'z*a!'
+ls -name 'a*' && -name '*z' && -name 'z*a!'
