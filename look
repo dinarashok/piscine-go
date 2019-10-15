@@ -1,1 +1,1 @@
-find -name 'a*' -and -name '*z' -and -name 'z*a!'
+find -name 'a*' -or -name '*z' -or -name 'z*a!'
