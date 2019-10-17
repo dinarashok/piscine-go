@@ -1,6 +1,7 @@
 package piscine
+import "github.com/01-edu/z01.PrintRune"
 
-func StrRev(s string) string {
-	s = s + "good day"
-	return s
+func PrintStr(str string) {
+z01.Println(str)
+z01.PrintRune(str)
 }
