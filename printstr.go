@@ -1,5 +1,7 @@
 package piscine
 
 func PrintStr(str string) {
-	Println(str)
+	charOneByOne := []byte(str)}
+	for _, letter := range charOneByOne {
+		fmt.Println(, letter)
 }
