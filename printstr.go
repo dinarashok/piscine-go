@@ -1,7 +1,7 @@
 package piscine
 
-import "github.com/01-edu/z01.PrintRune"
+import "fmt"
 
 func PrintStr(str string) {
-	z01.PrintRune(str)
+	fmt.Println(str)
 }
