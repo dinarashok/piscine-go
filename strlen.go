@@ -1,7 +1,11 @@
 package piscine
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func StrLen(str string) int {
-	nb := len(str)
+	nb := []rune(str)
+	for i, value := range nb {
+		z01.PrintRune(i)
+	}
+
 }
