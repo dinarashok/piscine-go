@@ -1,6 +1,6 @@
 package piscine
 
-import "github.com/01-edu/z01.PrintRune"
+import "github.com/01-edu/z01"
 
 func PrintStr(str string) {
 	charOneByOne := []byte(str)
