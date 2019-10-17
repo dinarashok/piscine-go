@@ -1,12 +1,14 @@
 package main
 
 import (
-	piscine ".."
-	"fmt"
+    "fmt"
+    piscine ".."
 )
 
 func main() {
-	n := 0
-	piscine.PointOne(&n)
-	fmt.Println(n)
+	a := 0
+	b := &a
+	n := &b
+	piscine.UltimatePointOne(&n)
+	fmt.Println(a)
 }
