@@ -1,9 +1,9 @@
 package piscine
 
 func StrLen(str string) int {
-	nb := []byte(str)
+	nb := []len(str)
 	for i, value := range nb {
-
+		return nb
 	}
-	return nb
+
 }
