@@ -9,7 +9,7 @@ func StrRev(s string) string {
 		len++
 	}
 
-	for i = 0; i < len; i++ {
+	for i := 0; i < len; i++ {
 		reverse[len-i-1] = initial[i]
 	}
 
