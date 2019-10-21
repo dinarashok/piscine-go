@@ -12,7 +12,7 @@ func IterativePower(nb int, power int) int {
 	if power == 0 {
 		return 1
 	} else {
-		x = 0
+		return 0
 	}
 
 }
