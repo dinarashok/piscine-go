@@ -7,6 +7,9 @@ func IterativeFactorial(nb int) int {
 			x = x * a
 		}
 		return x
+		if nb == 0 {
+			return 1
+		}
 	}
 	return 0
 }
