@@ -5,8 +5,8 @@ func Sqrt(nb int) int {
 		x := 1
 		nb := nb / 2
 		x += 1
+		return x
 	} else {
 		return 0
 	}
-	return x
 }
