@@ -7,7 +7,7 @@ func IsPrime(nb int) bool {
 			if nb%a == 0 {
 				prime = false
 			} else {
-				prime = true
+				prime = false
 			}
 		}
 	}
