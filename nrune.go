@@ -2,7 +2,9 @@ package piscine
 
 func NRune(s string, n int) rune {
 	MassiveRune := []rune(s)
-	var x int
-	x = &n
-	return MassiveRune[*x]
-}
+		for i, value := range MassiveRune {
+			if i == n-1{
+				return value
+			}
+		} return 0
+	}
