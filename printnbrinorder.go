@@ -23,7 +23,7 @@ func PrintNbrInOrder(n int) {
 			}
 		}
 	}
-	for i := range k {
-		z01.PrintRune(rune(48 + k[i]))
+	for i := range DivisionLeft {
+		z01.PrintRune(rune(48 + DivisionLeft[i]))
 	}
 }
