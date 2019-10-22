@@ -6,10 +6,10 @@ func IsPrime(nb int) bool {
 		for a := 2; a < nb; a++ {
 			if nb%a == 0 {
 				prime = false
-			} else {
-				prime = false
 			}
 		}
+	} else {
+		prime = false
 	}
 	return prime
 }
