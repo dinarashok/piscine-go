@@ -7,4 +7,5 @@ func NRune(s string, n int) rune {
 			return value
 		}
 	}
+	return 0
 }
