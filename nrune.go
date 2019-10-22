@@ -2,5 +2,6 @@ package piscine
 
 func NRune(s string, n int) rune {
 	MassiveRune := []rune(s)
-	return MassiveRune[n]
+	n := &x
+	return MassiveRune[*x]
 }
