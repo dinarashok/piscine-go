@@ -8,10 +8,10 @@ import (
 
 func main() {
 
-	AnyNameArg := []rune(os.Args[0])
-	// []rune(os.Args[0]) - massive of strings
-	for _, i := range AnyNameArg {
-		z01.PrintRune(rune(AnyNameArg[i]))
+	AnyNameArg := os.Args
+	// os.Args - massive of strings
+	for _, value := range AnyNameArg[0] {
+		z01.PrintRune(value)
 	}
 	z01.PrintRune('\n')
 }
