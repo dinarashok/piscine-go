@@ -7,7 +7,7 @@ func IsAlpha(str string) bool {
 		y++
 	}
 	for i := 0; i < y; i++ {
-		if RuneStr[i] < '0' || RuneStr[i] > '9' && RuneStr [i] < 'A' || RuneStr[i] > 'Z' && RuneStr[i] < 'a' || RuneStr[i] > 'z' {
+		if RuneStr[i] < '0' || RuneStr[i] > '9' && RuneStr[i] < 'A' || RuneStr[i] > 'Z' && RuneStr[i] < 'a' || RuneStr[i] > 'z' {
 			return false
 
 		}
