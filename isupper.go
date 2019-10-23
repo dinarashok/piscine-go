@@ -8,7 +8,7 @@ func IsUpper(str string) bool {
 	}
 
 	for i := 0; i < len; i++ {
-		if RuneS[i] < 'A' || RuneStr[i] > 'Z' {
+		if RuneStr[i] < 'A' || RuneStr[i] > 'Z' {
 			return false
 		}
 	}
