@@ -14,7 +14,7 @@ func Compare(a, b string) int {
 		lenB++
 	}
 
-	for i := 0; i < lenA-lenB; i++ {
+	for i := 0; i <= lenA-lenB; i++ {
 		if a == b {
 			return 0
 		}
