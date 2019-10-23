@@ -1,9 +1,9 @@
 package piscine
 
 func BasicJoin(strs []string) string {
-	var StrAnswer string
+	var AnswerStr string
 	for _, value := range strs {
-		StrAnswer += value
+		AnswerStr += value
 	}
-	return answer
+	return AnswerStr
 }
