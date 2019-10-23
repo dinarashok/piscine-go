@@ -1,10 +1,17 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
-	z01.PruntRune(os.Args[0], 0)
+
+	AnyNameArg := []rune(os.Args[i])
+	// []rune(os.Args[0]) - massive of strings
+	// for _, i := range AnyNameArg {
+	z01.PrintRune(rune(AnyNameArg[0]))
+	// }
+	z01.PrintRune('\n')
 }
