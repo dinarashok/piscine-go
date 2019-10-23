@@ -8,9 +8,9 @@ func IsNumeric(str string) bool {
 	}
 
 	for i := 0; i < y; i++ {
-		if RuneStr[i] >= '0' && RuneStr[i] <= '9' {
-			return true
+		if RuneStr[i] < '0' && RuneStr[i] > '9' {
+			return false
 		}
 	}
-	return false
+	return true
 }
