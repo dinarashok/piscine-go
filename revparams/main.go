@@ -17,6 +17,7 @@ func main() {
 		for _, value := range ListArgs[i] {
 			z01.PrintRune(value)
 		}
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
+
 }
