@@ -1,23 +1,23 @@
 package piscine
 
 func SplitWhiteSpaces(str string) []string {
-	RuneStr := []rune(str)
+	rs := []rune(str)
 	lastSep := -1
 	count := 1
-	for i := range RuneStr {
-		if RuneStr[i] == '\t' || RuneStr[i] == '\n' || RuneStr[i] == ' ' {
+	for i := range rs {
+		if rs[i] == '\t' || rs[i] == '\n' || rs[i] == ' ' {
 			count++
 		}
 	}
 	s := make([]string, count)
 	curr := 0
-	for i := range RuneStr {
-		if RuneStr[i] == '\t' || RuneStr[i] == '\n' || RuneStr[i] == ' ' {
-			s[curr] = string(RuneStr[lastSep+1 : i])
+	for i := range rs {
+		if rs[i] == '\t' || rs[i] == '\n' || rs[i] == ' ' {
+			s[curr] = string(rs[lastSep+1 : i])
 			curr++
 			lastSep = i
 		}
 	}
-	s[count-1] = RuneStr[lastSep+1 : my_rune_len(RuneStr)-1]
+	s[count-1] = rs[lastSep+1 : my_rune_len(rs)-1]
 	return s
 }
