@@ -14,7 +14,7 @@ func main() {
 	}
 
 	for i := len - 1; i > 0; i++ {
-		for _, value := range ListArgs {
+		for _, value := range ListArgs[i] {
 			z01.PrintRune(value)
 		}
 	}
