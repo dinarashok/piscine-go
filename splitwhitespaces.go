@@ -4,7 +4,7 @@ func SplitWhiteSpaces(str string) []string {
 	RuneStr := []rune(str)
 	lastSep := -1
 	count := 1
-	for i := range r {
+	for i := range RuneStr {
 		if RuneStr[i] == '\t' || RuneStr[i] == '\n' || RuneStr[i] == ' ' {
 			count++
 		}
