@@ -16,7 +16,7 @@ func main() {
 		len++
 	}
 	// precise that need just parameters
-	for i := 1; i <= len; i++ {
+	for i := 1; i < len+1; i++ {
 		// for range to get value
 		for _, value := range ListArgs[i] {
 			z01.PrintRune(value)
