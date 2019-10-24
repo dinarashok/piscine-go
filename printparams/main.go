@@ -18,7 +18,7 @@ func main() {
 	// precise that need just parameters
 	for i := 1; i <= len; i++ {
 		// for range to get value
-		for i, value := range ListArgs {
+		for _, value := range ListArgs[i] {
 			z01.PrintRune(value)
 			z01.PrintRune('\n')
 		}
