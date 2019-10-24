@@ -1,21 +1,45 @@
 package piscine
 
+// SplitWhiteSpaces function separates the words of a string
+// and puts them in a string array.
+// The separators are spaces, tabs and newlines.
 func SplitWhiteSpaces(str string) []string {
-	var MassiveStr []string
-	var b rune
-	c := 0
+	size := 1
+	var answer []string
+	lenstr := 0
 	for i := range str {
-		if i == i {
-			c++
-		}
-	}
-	for i, char := range str {
-		for str[i] != ' ' {
-			b = b + char
-		}
-		d := string(b)
-		MassiveStr = append(MassiveStr, d)
+		lenstr = i + 1
 	}
 
-	return MassiveStr
+	for i := 0; i < lenstr-1; i++ {
+		if str[i] == ' ' || str[i] == '\t' || str[i] == '\n' {
+			size++
+			if i > 0 {
+				if str[i-1] == ' ' || str[i-1] == '\t' || str[i-1] == '\n' {
+					size--
+				}
+			}
+		}
+	}
+
+	answer = make([]string, size)
+
+	tempstr := ""
+	j := 0
+	for i := 0; i <= lenstr; i++ {
+		if i == lenstr {
+			if tempstr != "" {
+				answer[j] = tempstr
+			}
+		} else if str[i] != ' ' && str[i] != '\t' && str[i] != '\n' {
+			tempstr = tempstr + string(str[i])
+		} else {
+			if tempstr != "" {
+				answer[j] = tempstr
+				j++
+			}
+			tempstr = ""
+		}
+	}
+	return answer
 }
