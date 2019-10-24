@@ -6,21 +6,15 @@ import (
 )
 
 func main() {
-
-	// call library for list of strings Args
-	ListArgs := os.Args
-
-	//find lenth
-	len := 0
-	for range ListArgs {
-		len++
+	answer := os.Args
+	count := 0
+	for range answer {
+		count++
 	}
-	// precise that need just parameters
-	for i := 1; i < len; i++ {
-		// for range to get value
-		for _, value := range ListArgs[i] {
-			z01.PrintRune(value)
-			z01.PrintRune('\n')
+	for i := 1; i < count; i++ {
+		for _, i2 := range answer[i] {
+			z01.PrintRune(i2)
 		}
+		z01.PrintRune(10)
 	}
 }
