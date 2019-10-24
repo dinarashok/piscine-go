@@ -14,4 +14,5 @@ func MakeRange(min, max int) []int {
 	} else {
 		return MakeSlice
 	}
+	return MakeSlice
 }
