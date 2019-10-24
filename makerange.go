@@ -5,13 +5,13 @@ func MakeRange(min, max int) []int {
 	size = max - min
 
 	if min < max {
-		MakeSlice = make([]int, size)
+		MakeSlice := make([]int, size)
 		for i := min; i < max; i++ {
 			MakeSlice[i] = min + 1
 		}
 	} else {
-		return MakeSlice
 		var MakeSlice []int
+		return MakeSlice
 	}
 	return MakeSlice
 }
