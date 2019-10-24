@@ -9,9 +9,9 @@ func MakeRange(min, max int) []int {
 		MakeSlice := make([]int, size)
 		for i := min; i < max; i++ {
 			MakeSlice[i] = min + 1
+			return MakeSlice
 		}
 	} else {
 		return MakeSlice
 	}
-	return MakeSlice
 }
