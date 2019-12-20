@@ -1,0 +1,27 @@
+func combUtil(start, end, n int, out string) {
+    base := ", 012345678"
+    m := end
+    if n == 0 {
+        if out == base[:m] {
+            for _, j := range out {
+                if j <= '9' && j >= '0' {
+                    z01.PrintRune(j)
+                }
+            }
+            return
+        }
+        for _, j := range out {
+            z01.PrintRune(j)
+        }
+        return
+    }
+    for i := start; i <= 9; i++ {
+        str := out + string(i+48)
+        combUtil(i+1, m, n-1, str)
+    }
+}
+
+func PrintCombN(n int) {
+    combUtil(0, n+2, n, ", ")
+    z01.PrintRune('\n')
+}
